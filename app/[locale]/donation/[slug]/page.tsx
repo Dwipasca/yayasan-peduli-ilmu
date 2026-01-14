@@ -1,7 +1,6 @@
 // app/[locale]/donation/[slug]/page.tsx
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-
 import DonationDetailPage from '@/features/donation/DonationDetail';
 import { getCachedProgramDetail } from '@/features/donation/lib/cached-program';
 import { getLocalizedField } from '@/lib/getLocalizedField';
@@ -16,10 +15,24 @@ export async function generateMetadata({
   const program = await getCachedProgramDetail(slug);
 
   if (program) {
-    return {
-      title: getLocalizedField(program, 'title', locale),
-      description: getLocalizedField(program, 'short_description', locale),
-    };
+    
+    const image = program?.image_url ?? undefined;
+    const title = getLocalizedField(program, 'title', locale);
+    const description = getLocalizedField(program, 'short_description', locale);
+    const metaData: Metadata = {
+      title,
+      description,
+      openGraph: {
+        title,
+        description,
+      }
+    }
+
+    if (image) {
+      metaData.openGraph!.images = [image]
+    }
+
+    return metaData
   }
 
   return {
