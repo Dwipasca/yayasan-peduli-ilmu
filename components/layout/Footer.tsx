@@ -6,6 +6,7 @@ import { NAV_LINKS, PROGRAM_LINKS } from '@/lib/constant';
 
 export default function Footer() {
   const t = useTranslations('Navigation');
+  const tf = useTranslations('Footer');
 
   return (
     <footer className="bg-accent-900 text-white">
@@ -26,10 +27,8 @@ export default function Footer() {
                 <p className="text-primary-200">Sulawesi Tengah</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-4 leading-relaxed">
-              Berkomitmen dalam mengembangkan pendidikan Islam dan dakwah yang
-              berkualitas untuk membangun generasi yang berilmu, berakhlak mulia, dan
-              bermanfaat bagi umat.
+            <p className="text-gray-300 mb-4 leading-relaxed"> 
+              {tf('logo.desc')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -80,13 +79,13 @@ export default function Footer() {
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
                 <div>
-                  <p className="text-gray-300">info@peduliilmu.org</p>
+                  <p className="text-gray-300">peduliilmusulteng@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary-400" />
                 <div>
-                  <p className="text-gray-300">+6282231504555</p>
+                  <p className="text-gray-300">+6285333111102</p>
                 </div>
               </div>
               <div className="flex items-start">

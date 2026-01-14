@@ -278,13 +278,13 @@ const PondokPesantrenPage = () => {
             <div className="grid md:grid-cols-2 gap-6 text-sm text-white/90">
               <div>
                 <p className="font-semibold mb-1">Telepon / WhatsApp</p>
-                <p className="mb-1">+6282231504555</p>
+                <p className="mb-1">+6285333111102</p>
                 <p>+6285225575696</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Email</p>
                 <p className="mb-1">pendaftaran@darulhadits.org</p>
-                <p>info@yayasanpeduliilmu.org</p>
+                <p>peduliilmusulteng@gmail.com</p>
               </div>
             </div>
           </div>

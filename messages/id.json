@@ -18,12 +18,12 @@
   "HomePage": {
     "meta": {
       "title": "Beranda - Yayasan Peduli Ilmu",
-      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial"
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah"
     },
     "hero-section": {
       "title": "Yayasan Peduli Ilmu",
       "subtitle": "Membangun Generasi Quran dan Hadits",
-      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah sosial",
+      "description": "Yayasan yang berkomitmen dalam pengembangan pendidikan Islam dan dakwah",
       "cta": {
         "primary": "Pembangunan Pondok Pesantren",
         "secondary": "Tentang Yayasan"
@@ -131,9 +131,17 @@
       "title": "Yayasan Peduli Ilmu Sulawesi Tengah",
       "description": {
         "desc-1": "Yayasan Peduli Ilmu Sulawesi Tengah didirikan dengan visi mulia untuk mengembangkan pendidikan Islam yang berkualitas di wilayah Sulawesi  Tengah. Kami berkomitmen untuk mencetak generasi yang tidak hanya cerdas secara intelektual, tetapi juga memiliki akhlak yang mulia.",
-        "desc-2": " Sejak berdiri, yayasan ini telah menjalankan berbagai program                 pendidikan dan dakwah yang berdampak positif bagi masyarakat. Dengan                 dukungan para donatur dan relawan yang peduli, kami terus berupaya                 memberikan kontribusi terbaik untuk kemajuan pendidikan Islam di                 Indonesia.",
-        "desc-3": "Program-program kami dirancang untuk memenuhi kebutuhan pendidikan                 Islam yang komprehensif, mulai dari pendidikan formal di pondok                 pesantren hingga program pembelajaran komunitas yang terbuka untuk                 masyarakat umum."
-      }
+        "desc-2": "",
+        "desc-3": ""
+      },
+      "structures": [
+        { "id": 1, "group_id": "advisors", "name": "Ustad Abu Huraerah B.A, M.A", "position": "Pembina 1", "bio": "Alumni Pasca-sarjana Prodi Ilmu Hadis Universitas Islam Madinah" },
+        { "id": 2, "group_id": "advisors", "name": "Ustad Imam Ghazali Sabran", "position": "Pembina 2", "bio": "Alumni Mah'ad Ittibaus Sunnah Magetan" },
+        { "id": 3, "group_id": "management", "name": "Muhammad Rizki Rijal, A.Md", "position": "Ketua", "bio": "" },
+        { "id": 4, "group_id": "management", "name": "Fakhruddin Nur, S.T", "position": "Sekertaris", "bio": "" },
+        { "id": 5, "group_id": "management", "name": "Hardisan", "position": "Bendahara", "bio": "" },
+        { "id": 6, "group_id": "supervisors", "name": "Priyatri Santoso", "position": "Pembina", "bio": "" }
+      ]
     },
     "visimisi-section": {
       "title": "Visi & Misi",
@@ -141,9 +149,9 @@
       "misions": {
         "misi-1": "Menyelenggarakan pendidikan Islam yang berkualitas dan terpadu",
         "misi-2": "Mengembangkan dakwah Islam yang moderat dan rahmatan lil alamiin",
-        "misi-3": "Memberdayakan masyarakat melalui program-program sosial dan ekonomi",
+        "misi-3": "Melestarikan nilai-nilai Islam dalam kehidupan bermasyarakat",
         "misi-4": "Membangun jaringan kerjasama dengan berbagai pihak untuk kemajuan pendidikan",
-        "misi-5": "Melestarikan nilai-nilai Islam dalam kehidupan bermasyarakat"
+        "misi-5": "n/a"
       }
     },
     "management-section": {
@@ -347,6 +355,6 @@
     "title": "Pondok Putri Darul Hadits Sibowi",
     "subtitle": "Program pendidikan Islam terpadu untuk santri putri dengan fokus pada tahfidz Al-Quran dan ilmu syar'i",
     "about": "Tentang Ma'had",
-    "description": "Pondok Pesantren Daarul Hadiits Putri Sibowi merupakan lembaga pendidikan Islam khusus putri yang berdiri sejak tahun 2020. Pesantren ini berfokus pada pembelajaran aqidah yang lurus serta pembinaan keilmuan syar’i melalui hafalan Al-Qur’an dan hadits, fiqh, tajwid, adab, serta penguasaan bahasa Arab. Dengan menekankan pemahaman agama yang benar dan pembentukan akhlak mulia, Pondok Pesantren Daarul Hadiits Putri Sibowi berkomitmen mencetak generasi muslimah yang berilmu, beradab, dan berpegang teguh pada Al-Qur’an dan Sunnah. \n\n Tahun 2026 markas pondok akan berpindah dari kota Palu ke lokasi permanen di Desa Sibowi, Kecamatan Sigi Biromaru, Kabupaten Sigi, Sulawesi Tengah."
+    "description": "Pondok Pesantren Daarul Hadiits Putri Sibowi merupakan lembaga pendidikan Islam khusus putri yang berdiri sejak tahun 2020. Pesantren ini berfokus pada pembelajaran aqidah yang lurus serta pembinaan keilmuan syar’i melalui hafalan Al-Qur’an dan hadits, fiqh, tajwid, adab, serta penguasaan bahasa Arab. Dengan menekankan pemahaman agama yang benar dan pembentukan akhlak mulia, Pondok Pesantren Daarul Hadiits Putri Sibowi berkomitmen mencetak generasi muslimah yang berilmu, beradab, dan berpegang teguh pada Al-Qur’an dan Sunnah. \n\n Tahun 2026 in syaa Allah markas pondok akan berpindah dari kota Palu ke lokasi permanen di Desa Sibowi, Kecamatan Sigi Biromaru, Kabupaten Sigi, Sulawesi Tengah."
   }
 }

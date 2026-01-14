@@ -3,7 +3,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { CheckCircle } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { BANK_ACCOUNTS } from '@/lib/constant';
 
 type BankTransferSectionProps = {
@@ -16,8 +16,11 @@ function SmallBankTransferInfo({
   copiedText,
   copyToClipboard,
 }: BankTransferSectionProps) {
+  const locale = useLocale();
   const t = useTranslations('DonationDetailPage.donation-section');
   const bank = BANK_ACCOUNTS[0];
+  const showSwift = locale !== 'id';
+
   return (
     <div className="mb-4">
       <div
@@ -27,7 +30,7 @@ function SmallBankTransferInfo({
         <p className="font-semibold text-foreground mb-4 text-sm md:text-lg">{bank.bank}</p>
 
         <div className="space-y-6">
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col justify-center md:flex-row gap-4">
             <BankCard
               label={t('noAccountLabel')}
               value={bank.account}
@@ -39,7 +42,7 @@ function SmallBankTransferInfo({
               variant="primary"
             />
 
-            <BankCard
+            {showSwift && <BankCard
               label={t('swiftCodeLabel')}
               value={bank.swift}
               footer="PT BANK SYARIAH INDONESIA TBK"
@@ -48,7 +51,7 @@ function SmallBankTransferInfo({
               buttonLabelDefault={t('btncopySwiftLabel2')}
               buttonLabelCopied={t('btncopySwiftLabel')}
               variant="secondary"
-            />
+            />}
           </div>
         </div>
       </div>

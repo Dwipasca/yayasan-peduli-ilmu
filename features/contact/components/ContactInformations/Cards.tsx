@@ -11,8 +11,7 @@ export default function Cards() {
           <Mail className="h-8 w-8 text-white" />
         </div>
         <h3 className="text-lg font-semibold text-brand-navy mb-2">Email</h3>
-        <p className="text-gray-700 text-sm mb-1">info@yayasanpeduliilmu.org</p>
-        <p className="text-gray-700 text-sm">admin@yayasanpeduliilmu.org</p>
+        <p className="text-gray-700 text-sm mb-1">peduliilmusulteng@gmail.com</p>
       </div>
 
       {/* Phone Card */}

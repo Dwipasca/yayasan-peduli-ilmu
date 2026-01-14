@@ -23,10 +23,10 @@
     "hero-section": {
       "title": "Yayasan Peduli Ilmu",
       "subtitle": "Building a Quranic Generation with Noble Character",
-      "description": "A foundation committed to developing Islamic education and community empowerment through quality programs.",
+      "description": "A foundation committed to the development of Islamic education and da‘wah in Central Sulawesi, Indonesia.",
       "cta": {
-        "primary": "بناء المدرسة الداخلية",
-        "secondary": "عن المؤسسة"
+        "primary": "Build the Boarding School",
+        "secondary": "About the Foundation"
       }
     },
     "visimisi-section": {
@@ -123,7 +123,7 @@
   "AboutPage": {
     "meta": {
       "title": "About Us - Yayasan Peduli Ilmu",
-      "description": "Get to know the Foundation for Caring for Science and our commitment in building the Qur'ani generation"
+      "description": "Get to know the Yayasan Peduli Ilmu and our commitment in building the Qur'ani generation"
     },
     "title": "About Us",
     "aboutus-section": {
@@ -131,9 +131,53 @@
       "title": "Peduli Ilmu Foundation of Central Sulawesi",
       "description": {
         "desc-1": "The Central Sulawesi Care Foundation was founded with a noble vision to develop quality Islamic education in the Central Sulawesi region. \nWe are committed to producing a generation that is not only intellectually intelligent, but also has noble character.",
-        "desc-2": "Since its establishment, this foundation has carried out various education and da'wah programs that have a positive impact on the community. \nWith the support of donors and volunteers who care, we continue to make the best contribution to the progress of Islamic education in Indonesia.",
-        "desc-3": "Our programs are designed to meet the needs of comprehensive Islamic education, ranging from formal education in Islamic boarding schools to community learning programs that are open to the general public."
-      }
+        "desc-2": "",
+        "desc-3": ""
+      },
+      "structures": [
+        {
+          "id": 1,
+          "group_id": "advisors",
+          "name": "Ustad Abu Huraerah B.A, M.A",
+          "position": "Advisor",
+          "bio": "Postgraduate alumnus of the Hadith Studies Program, Islamic University of Madinah"
+        },
+        {
+          "id": 2,
+          "group_id": "advisors",
+          "name": "Ustad Imam Ghazali Sabran",
+          "position": "Advisor",
+          "bio": "Alumnus of Ma'had Ittiba'us Sunnah, Magetan"
+        },
+        {
+          "id": 3,
+          "group_id": "management",
+          "name": "Muhammad Rizki Rijal",
+          "position": "Chairman",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "group_id": "management",
+          "name": "Fakhruddin Nur",
+          "position": "Secretary",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "group_id": "management",
+          "name": "Hardisan",
+          "position": "Treasurer",
+          "bio": ""
+        },
+        {
+          "id": 6,
+          "group_id": "supervisors",
+          "name": "Priyatri Santoso",
+          "position": "Supervisor",
+          "bio": ""
+        }
+      ]
     },
     "visimisi-section": {
       "title": "Vision",

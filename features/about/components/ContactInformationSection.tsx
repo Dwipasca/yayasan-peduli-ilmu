@@ -43,7 +43,7 @@ export default function ContactInformationSection() {
               {t('contactinformation-section.phoneTitle')}
             </h3>
             <p className={`text-gray-600 `}>
-              +6282231504555
+              +6285333111102
               <br />
               +6285225575696
             </p>
@@ -57,7 +57,7 @@ export default function ContactInformationSection() {
               {t('contactinformation-section.emailTitle')}
             </h3>
             <p className={`text-gray-600 `}>
-              info@peduliilmu.org
+              peduliilmusulteng@gmail.com
             </p>
           </div>
         </div>

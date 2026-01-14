@@ -1,14 +1,21 @@
 import React from 'react';
 import { User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { BOARD_MEMBERS, CONTROLS, MANAGEMENTS } from '../constants';
 
-function Card({ person }: { person: any }) {
+interface Person {
+  id: number;
+  group_id: string;
+  name: string;
+  position: string;
+  bio: string;
+}
+
+function Card({ person }: { person: Person }) {
   return (
     <div    
       className="bg-card rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-b text-center group flex flex-col"
     >
-      <div className="flex flex-col flex-1 p-6 border-b">
+      <div className="flex flex-col flex-1 p-6">
         {/* Avatar */}
         <div className="mx-auto w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
           <User className="h-10 w-10 text-white" />
@@ -27,17 +34,22 @@ function Card({ person }: { person: any }) {
       </div>
 
       {/* Description */}
-      <div className="p-6 mt-auto">
+      {!!person.bio && (<div className="p-6 mt-auto border-t">
         <p className="text-muted-foreground text-sm leading-relaxed">
-          {person.description}
+          {person.bio}
         </p>
-      </div>
+      </div>)}
     </div>
   )
 }
 
 export default function ManagementSection() {
   const t = useTranslations('AboutPage');
+  
+  const structures: Person[] = useTranslations('AboutPage').raw('aboutus-section.structures');
+  const ADVISORS = structures.filter(person => person.group_id === 'advisors');
+  const MANAGEMENTS = structures.filter(person => person.group_id === 'management');
+  const CONTROLS = structures.filter(person => person.group_id === 'supervisors');
 
   return (
     <section className="py-16">
@@ -55,7 +67,7 @@ export default function ManagementSection() {
 
         {/* List management */}
         <div className="mb-4 grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {BOARD_MEMBERS.map((person, index) => <Card key={index} person={person} />)}
+          {ADVISORS.map((person, index) => <Card key={index} person={person} />)}
         </div>
         <div className="mb-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {MANAGEMENTS.map((person, index) => <Card key={index} person={person} />)}

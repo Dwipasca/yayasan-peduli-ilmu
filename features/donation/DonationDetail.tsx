@@ -26,7 +26,7 @@ const DonationDetailPage = () => {
 
   const confirmationWhatsapp = currentLocale === 'id'
     ? '+62 823-4992-2884'
-    : '+62 852-2557-5696'
+    : '6285225575696+'
   const confirmationPosition = currentLocale === 'id'
     ? 'Bendahara Yayasan'
     : 'Foundation Management Chairman'
@@ -100,9 +100,9 @@ const DonationDetailPage = () => {
             <DonationProgress donation={program} />
 
             <SmallBankTransferInfo
-                copiedText={copiedText}
-                copyToClipboard={copyToClipboard}
-              />
+              copiedText={copiedText}
+              copyToClipboard={copyToClipboard}
+            />
 
             <ProgramDetailSection data={program} />
 

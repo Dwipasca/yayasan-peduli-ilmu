@@ -2,17 +2,13 @@ import Image from 'next/image';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { PostgrestResponse } from '@supabase/supabase-js';
 
-import { Target, Eye, ArrowRight, Bell, Calendar } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { supabase } from '@/lib/supabase';
 
 // global components
-import { VisiMisiSection } from '@/components/section/VisiMisiSection';
 import { Button } from '@/components/ui/Button';
-import TitleSection from '@/components/ui/TitleSection';
 
-import { ProgramCard, ProgramDonationCard } from './components';
-import { PROGRAM_CARD_DATA, ANNOUNCEMENTS } from './constants';
 
 import { ProgramDonationProps } from './types';
 

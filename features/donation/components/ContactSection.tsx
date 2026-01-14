@@ -14,20 +14,20 @@ type ContactSectionProps = {
 function ContactSection({
   copiedText,
   copyToClipboard,
-  contactNumber = '+62 823-4992-2884',
+  contactNumber = '+62-823-4992-2884',
   contactName = 'Bendahara Yayasan',
 }: ContactSectionProps) {
   const t = useTranslations('DonationDetailPage.contact-section');
 
+  const cleanedNumber = contactNumber.replace(/\D/g, '')
   const handleClick = () => {
-    copyToClipboard('+6282349922884', 'phone');
+    copyToClipboard(`+${cleanedNumber}`, 'phone');
   };
-
-  const whatsappLink = `https://wa.me/${contactNumber.replace(/\D/g, '')}`;
+  const whatsappLink = `https://wa.me/${cleanedNumber}`;
 
   return (
     <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
-      <p className="font-semibold text-foreground mb-6 text-lg">Nomor WhatsApp</p>
+      <p className="font-semibold text-foreground mb-6 text-lg">WhatsApp</p>
       <div className="flex items-center gap-4 mb-6">
         <Phone className="h-6 w-6 text-primary flex-shrink-0" />
         <div className="min-w-0 flex-1">
