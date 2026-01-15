@@ -140,7 +140,7 @@
         { "id": 3, "group_id": "management", "name": "Muhammad Rizki Rijal, A.Md", "position": "Ketua", "bio": "" },
         { "id": 4, "group_id": "management", "name": "Fakhruddin Nur, S.T", "position": "Sekertaris", "bio": "" },
         { "id": 5, "group_id": "management", "name": "Hardisan", "position": "Bendahara", "bio": "" },
-        { "id": 6, "group_id": "supervisors", "name": "Priyatri Santoso", "position": "Pembina", "bio": "" }
+        { "id": 6, "group_id": "supervisors", "name": "Priyatri Santoso", "position": "Pengawas", "bio": "" }
       ]
     },
     "visimisi-section": {
